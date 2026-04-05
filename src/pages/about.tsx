@@ -118,23 +118,27 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Types & Art Section */}
+            {/* Process of Carpet and Rug Section */}
             <section className="py-24 px-6 bg-stone-900 text-white overflow-hidden">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20">
                     <div className="lg:w-1/2 space-y-12">
-                        <h3 className="text-4xl font-serif text-[#c5a059]">Types of Carpets</h3>
+                        <h3 className="text-4xl font-serif text-[#c5a059]">Process of Carpet and Rug</h3>
                         <div className="space-y-8">
                             <div>
-                                <h4 className="font-bold tracking-widest text-xs mb-2">Hand-Knotted</h4>
-                                <p className="text-stone-400 text-sm font-light">Fully handmade. Premium quality. Highly artistic and long-lasting.</p>
+                                <h4 className="font-bold tracking-widest text-xs uppercase mb-2">01. Design & Visualization</h4>
+                                <p className="text-stone-400 text-sm font-light">Creating the 'Map' or 'Naksha' that guides our master weavers with precision and artistic vision.</p>
                             </div>
                             <div>
-                                <h4 className="font-bold tracking-widest text-xs mb-2">Hand-Tufted</h4>
-                                <p className="text-stone-400 text-sm font-light">Made using tools. Faster production. More affordable.</p>
+                                <h4 className="font-bold tracking-widest text-xs uppercase mb-2">02. Material Sourcing & Dyeing</h4>
+                                <p className="text-stone-400 text-sm font-light">Selecting the finest wool and silk, followed by dyeing using traditional, long-lasting methods.</p>
                             </div>
                             <div>
-                                <h4 className="font-bold tracking-widest text-xs mb-2">Flat-Weave (Kilim)</h4>
-                                <p className="text-stone-400 text-sm font-light">Lightweight and reversible. No knots used.</p>
+                                <h4 className="font-bold tracking-widest text-xs uppercase mb-2">03. Masterful Weaving</h4>
+                                <p className="text-stone-400 text-sm font-light">Every knot is tied by hand, a meticulous labor of love and heritage in our Bhadohi workshops.</p>
+                            </div>
+                            <div>
+                                <h4 className="font-bold tracking-widest text-xs uppercase mb-2">04. Washing & Hand Finishing</h4>
+                                <p className="text-stone-400 text-sm font-light">A multi-stage cleaning and shearing process that brings out the final sheen and texture.</p>
                             </div>
                         </div>
                     </div>

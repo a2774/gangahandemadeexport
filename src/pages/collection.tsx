@@ -18,13 +18,13 @@ const Collection = () => {
                             <div className="aspect-[4/5] overflow-hidden bg-stone-100 shadow-sm border border-stone-100 group-hover:shadow-xl transition-all duration-500">
                                 <img 
                                     src={image} 
-                                    alt={`Design ${idx + 1}`} 
+                                    alt={`GHEAD${(idx + 1).toString().padStart(4, '0')}`} 
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                                     loading="lazy"
                                 />
                             </div>
                             <div className="text-center">
-                                <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-[#c5a059]">Design #{idx + 1}</span>
+                                <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#c5a059]">Design Number GHEAD{(idx + 1).toString().padStart(4, '0')}</span>
                             </div>
                         </div>
                     ))}
