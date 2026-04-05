@@ -29,18 +29,18 @@ function Home() {
             {/* Hero Section */}
 
             {/* Hero Section */}
-            <header className="pt-40 pb-20 px-6">
+            <header className="pt-32 pb-16 px-6">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-[#c5a059] text-sm font-bold tracking-[0.4em] uppercase mb-4 animate-fade-in">Exquisite Craftsmanship</h2>
-                    <h1 className="text-5xl md:text-7xl font-serif font-light leading-tight mb-8">
+                    <h2 className="text-[#c5a059] text-xs md:text-sm font-medium tracking-[0.4em] uppercase mb-4 animate-fade-in">Exquisite Craftsmanship</h2>
+                    <h1 className="text-4xl md:text-6xl font-serif font-light leading-tight mb-6">
                         The Art of <span className="italic font-normal">Handmade</span> Elegance
                     </h1>
-                    <p className="text-stone-500 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                    <p className="text-stone-500 text-base md:text-lg max-w-2xl mx-auto font-light leading-relaxed">
                         Discover our exclusive collection of premium carpets and rugs, meticulously
                         handcrafted for the modern home. Available in all sizes and fully customizable to your specific requirements.
                     </p>
-                    <div className="mt-12 flex flex-col md:flex-row gap-4 justify-center">
-                        <a href="#collection" className="px-10 py-4 bg-[#2d2d2d] text-white text-sm font-bold uppercase tracking-widest hover:shadow-[0_0_20px_rgba(197,160,89,0.3)] transition-all">
+                    <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
+                        <a href="#collection" className="px-10 py-4 bg-[#2d2d2d] text-white text-[10px] md:text-xs font-bold uppercase tracking-widest hover:shadow-[0_0_20px_rgba(197,160,89,0.3)] transition-all">
                             Explore Collection
                         </a>
                     </div>
