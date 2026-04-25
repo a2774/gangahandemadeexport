@@ -2,13 +2,13 @@ const About = () => {
     return (
         <div className="min-h-screen bg-[#faf9f6] text-[#2d2d2d] selection:bg-[#c5a059] selection:text-white">
             {/* Hero Section */}
-            <header className="pt-48 pb-24 px-6 bg-stone-100">
-                <div className="max-w-5xl mx-auto flex flex-col items-center text-center space-y-8">
-                    <h2 className="text-[#c5a059] text-sm font-bold tracking-[0.4em] uppercase">Tradition & Craft</h2>
-                    <h1 className="text-5xl md:text-7xl font-serif leading-tight">
+            <header className="pt-24 pb-10 px-6 bg-stone-100">
+                <div className="max-w-5xl mx-auto flex flex-col items-center text-center space-y-4">
+                    <h2 className="text-[#c5a059] text-xs font-bold tracking-[0.4em] uppercase">Tradition & Craft</h2>
+                    <h1 className="text-3xl md:text-4xl font-serif leading-tight">
                         Carpets & Rugs – <span className="italic">A Timeless Piece of Art</span>
                     </h1>
-                    <div className="w-24 h-px bg-[#c5a059] mx-auto" />
+                    <div className="w-16 h-px bg-[#c5a059] mx-auto" />
                 </div>
             </header>
 

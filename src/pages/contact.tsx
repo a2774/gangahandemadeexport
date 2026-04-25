@@ -8,6 +8,7 @@ const Contact = () => {
         const waMessage = `✨ *Corporate/Bulk Inquiry* ✨\n\n👤 *Name:* ${formInquiry.name}\n🏢 *Company:* ${formInquiry.company}\n📧 *Email:* ${formInquiry.email}\n📞 *Phone:* ${formInquiry.phone}\n\n📝 *Message:* ${formInquiry.message}`
         const waUrl = `https://wa.me/916388287704?text=${encodeURIComponent(waMessage)}`
         window.open(waUrl, '_blank')
+        setFormInquiry({ name: '', email: '', phone: '', company: '', message: '' })
     }
 
     return (

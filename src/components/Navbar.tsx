@@ -43,6 +43,7 @@ const Navbar = () => {
                             <Link
                                 key={link.path}
                                 to={link.path}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}
                                 className={`${isActive(link.path) ? 'text-[#c5a059]' : 'text-stone-600'} hover:text-[#c5a059] transition-all relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-[#c5a059] hover:after:w-full after:transition-all`}
                             >
                                 {link.name}
@@ -78,7 +79,7 @@ const Navbar = () => {
                             <Link
                                 key={link.path}
                                 to={link.path}
-                                onClick={() => setIsMenuOpen(false)}
+                                onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'instant' }); }}
                                 className={`text-xl font-serif tracking-wide transition-all duration-500 transform ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'} ${isActive(link.path) ? 'text-[#c5a059]' : 'text-stone-800'}`}
                                 style={{ transitionDelay: `${index * 100}ms` }}
                             >
