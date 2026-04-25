@@ -73,26 +73,24 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu Overlay */}
-                <div className={`sm:hidden fixed inset-0 top-[80px] bg-white/95 backdrop-blur-xl z-[100] transition-all duration-500 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-                    <div className="px-8 py-8 flex flex-col gap-4 h-full border-t border-stone-100 overflow-y-auto">
-                        {navLinks.map((link, index) => (
+                <div className={`sm:hidden fixed inset-0 top-[80px] bg-white z-[100] transition-all duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+                    <div className="px-8 py-6 flex flex-col gap-3 border-t border-stone-100">
+                        {navLinks.map((link) => (
                             <Link
                                 key={link.path}
                                 to={link.path}
                                 onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'instant' }); }}
-                                className={`text-xl font-serif tracking-wide transition-all duration-500 transform ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'} ${isActive(link.path) ? 'text-[#c5a059]' : 'text-stone-800'}`}
-                                style={{ transitionDelay: `${index * 100}ms` }}
+                                className={`text-sm font-bold uppercase tracking-[0.2em] ${isActive(link.path) ? 'text-[#c5a059]' : 'text-[#2d2d2d]'}`}
                             >
                                 {link.name}
                             </Link>
                         ))}
-                        <div className={`mt-4 pt-6 border-t border-stone-100 transition-all duration-500 delay-[400ms] ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                            <p className="text-[10px] uppercase tracking-[0.3em] text-stone-400 mb-4 font-bold">Inquiries</p>
+                        <div className="pt-6 border-t border-stone-100">
                             <button
                                 onClick={() => { setIsInquiryOpen(true); setIsMenuOpen(false); }}
-                                className="w-full py-4 bg-[#c5a059] text-white text-xs font-bold uppercase tracking-widest shadow-lg shadow-[#c5a059]/20"
+                                className="w-full py-4 bg-[#2d2d2d] text-white text-xs font-bold uppercase tracking-widest"
                             >
-                                Send Message
+                                Enquire Now
                             </button>
                         </div>
                     </div>
